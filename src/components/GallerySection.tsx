@@ -3,6 +3,12 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import politicalRally from "@/assets/political-rally.jpg";
 import communityWork from "@/assets/community-work.jpg";
 import politicianPortrait from "@/assets/politician-portrait.jpg";
+import speechEvent from "@/assets/speech-event.jpg";
+import villageVisit from "@/assets/village-visit.jpg";
+import schoolInauguration from "@/assets/school-inauguration.jpg";
+import officeMeeting from "@/assets/office-meeting.jpg";
+import medicalCamp from "@/assets/medical-camp.jpg";
+import youthInteraction from "@/assets/youth-interaction.jpg";
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -27,19 +33,37 @@ const GallerySection = () => {
       description: "Official portrait for government documentation"
     },
     {
-      src: politicalRally,
-      alt: "Victory Celebration",
-      title: "Election Victory 2023",
-      description: "Celebrating electoral victory with party workers and supporters"
+      src: speechEvent,
+      alt: "Public Speech Event",
+      title: "Public Address 2023",
+      description: "Delivering keynote speech at district development conference"
     },
     {
-      src: communityWork,
-      alt: "Healthcare Initiative",
+      src: villageVisit,
+      alt: "Village Visit",
+      title: "Rural Outreach",
+      description: "Meeting with farmers and discussing agricultural reforms"
+    },
+    {
+      src: schoolInauguration,
+      alt: "School Inauguration",
+      title: "Education Initiative",
+      description: "Inaugurating new school building for underprivileged children"
+    },
+    {
+      src: officeMeeting,
+      alt: "Office Meeting",
+      title: "Policy Discussion",
+      description: "Strategic planning meeting with government officials"
+    },
+    {
+      src: medicalCamp,
+      alt: "Medical Camp",
       title: "Healthcare Initiative",
-      description: "Launching mobile medical units for remote villages"
+      description: "Launching free medical camp for rural communities"
     },
     {
-      src: politicalRally,
+      src: youthInteraction,
       alt: "Youth Interaction",
       title: "Youth Parliament",
       description: "Interactive session with college students and young professionals"
@@ -147,19 +171,19 @@ const GallerySection = () => {
         {/* Statistics */}
         <div className="grid md:grid-cols-4 gap-8 mt-16">
           <div className="text-center political-card p-6">
-            <div className="text-3xl font-bold text-primary mb-2">150+</div>
+            <div className="text-3xl font-bold text-primary mb-2">200+</div>
             <div className="text-muted-foreground">Public Events</div>
           </div>
           <div className="text-center political-card p-6">
-            <div className="text-3xl font-bold text-accent mb-2">50K+</div>
+            <div className="text-3xl font-bold text-accent mb-2">75K+</div>
             <div className="text-muted-foreground">People Met</div>
           </div>
           <div className="text-center political-card p-6">
-            <div className="text-3xl font-bold text-primary mb-2">25+</div>
+            <div className="text-3xl font-bold text-primary mb-2">35+</div>
             <div className="text-muted-foreground">Projects Launched</div>
           </div>
           <div className="text-center political-card p-6">
-            <div className="text-3xl font-bold text-accent mb-2">15</div>
+            <div className="text-3xl font-bold text-accent mb-2">18</div>
             <div className="text-muted-foreground">Years of Service</div>
           </div>
         </div>
